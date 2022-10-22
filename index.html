@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="/styles/style.css" />
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="/images/logo.svg" alt="Logo" class="header__logo" />
+
+    <div class="nav__container" id="nav__container">
+      <nav>
+        <img src="/images/icon-close-menu.svg" alt="Close Menu Icon" style="display:none;" id="open__close"
+          class="open__close">
+        <ul class="header__link-ul">
+
+          <li class="header__link-li features" id="features">
+            Features
+            <img id="featuresArrow" src="/images/icon-arrow-down.svg" alt="Icon arrow down" />
+
+            <div class="dropdown features__dropdown" id="featuresDropdown">
+              <ul class="dropdown__ul">
+                <li class="dropdown__li">
+                  <img src="/images/icon-todo.svg" alt="Todo Icon" /> Todo list
+                </li>
+
+                <li class="dropdown__li">
+                  <img src="/images/icon-calendar.svg" alt="Calendar Icon" />
+                  Calendar
+                </li>
+
+                <li class="dropdown__li">
+                  <img src="/images/icon-reminders.svg" alt="Reminders Icon" />
+                  Reminders
+                </li>
+
+                <li class="dropdown__li">
+                  <img src="/images/icon-planning.svg" alt="Planning Icon" />
+                  Planning
+                </li>
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="header__link-li" id="company">
+            Company
+            <img id="companyArrow" src="/images/icon-arrow-down.svg" alt="Icon arrow down" />
+
+            <div class="dropdown company__dropdown" id="companyDropdown">
+              <ul class="dropdown__ul">
+                <li class="dropdown__li">
+                  History
+                </li>
+
+                <li class="dropdown__li">
+                  Our Team
+                </li>
+
+                <li class="dropdown__li">
+                  Blog
+                </li>
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="header__link-li">Careers</li>
+
+          <li class="header__link-li">About</li>
+        </ul>
+
+        <button class="header__login">Login</button>
+        <button class="header__register">Register</button>
+      </nav>
+    </div>
+    <img src="/images/icon-menu.svg" alt="Menu Icon" class="header__menu-icon" id="header__menu">
+  </header>
+
+  <main>
+
+    <section class="main__text">
+      <h1>Make remote work</h1>
+
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals and watch productivity soar.
+      </p>
+
+      <button class="main__learn">Learn More</button>
+
+      <div class="main__credit">
+        <img src="/images/client-databiz.svg" alt="databiz icon" />
+
+        <img src="/images/client-audiophile.svg" alt="audiophile icon" />
+
+        <img src="/images/client-meet.svg" alt="meet icon" />
+
+        <img src="/images/client-maker.svg" alt="Maker icon" />
+      </div>
+    </section>
+
+    <section class="main__image">
+      <img src="/images/image-hero-mobile.png" alt="Hero Image" class="main__hero img-fluid" />
+    </section>
+
+
+  </main>
+
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://twitter.com/ClementKaluoke2" target="_blank" rel="noopener noreferrer">Clement Kalu Okereke</a>.
+  </footer>
+  <script src="/scripts/script.js"></script>
+</body>
+
+</html>
